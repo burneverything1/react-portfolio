@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row'
 import Card from '../components/Card'
 
 import MERN from '../assets/images/MERN.jpg'
+import API from '../assets/images/API.svg'
 
 const Carousel = (props) => {
     const [ items, setItems ] = useState([
@@ -14,6 +15,16 @@ const Carousel = (props) => {
             subTitle: 'MongoDB, Express, React, Node based Web App',
             imgSrc: MERN,
             link: '',
+            code: 'https://github.com/burneverything1/FSO-Note-nodebackend',
+            selected: false
+        },
+        {
+            id: 1,
+            title: 'JS + API',
+            subTitle: 'async Js, API requests Web App',
+            imgSrc: API,
+            link: 'https://50emawebsite.burneverything1.repl.co/',
+            code: 'https://github.com/burneverything1/50EMAWebsite',
             selected: false
         }
     ])

@@ -11,6 +11,8 @@ const CardInfo = (props) => {
             <p className='t-card-title'>{props.title}</p>
             <p className='t-card-subtitle'>{props.subTitle}</p>
             <a href={props.link} target='_blank' rel='noopener noreferrer'>View</a>
+            <br></br>
+            <a href={props.code} target='_blank' rel='noopener noreferrer'>Code</a>
         </animated.div>
     )
 }

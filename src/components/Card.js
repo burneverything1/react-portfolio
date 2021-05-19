@@ -7,7 +7,7 @@ const Card = ({ item, click }) => {
     return (
         <div className='d-inline-block t-card' onClick={(e) => click(item)}>
             <img className='t-card-image' src={item.imgSrc} alt={item.imgSrc} />
-            {item.selected && <CardInfo title={item.title} subTitle={item.subTitle} link={item.link} /> }
+            {item.selected && <CardInfo title={item.title} subTitle={item.subTitle} link={item.link} code={item.code}/> }
         </div>
     )
 }
