@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import Container from 'react-bootstrap/Container'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import { Container, Navbar, Nav } from 'react-bootstrap'
 
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
@@ -16,8 +14,7 @@ const App = (props) => {
   ])
   const [ home, setHome ] = useState({
     title: 'Always Learning',
-    subTitle: 'Solving problems with Technology',
-    text: 'Checkout my projects below'
+    subTitle: 'Solving problems with Technology'
   })
   const [ about, setAbout ] = useState('About Me')
 
