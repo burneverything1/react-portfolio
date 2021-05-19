@@ -11,10 +11,10 @@ const Carousel = (props) => {
     const [ items, setItems ] = useState([
         {
             id: 0,
-            title: 'MERN Stack',
-            subTitle: 'MongoDB, Express, React, Node based Web App',
+            title: 'ERN Stack',
+            subTitle: 'Express, React, Node based Web App',
             imgSrc: MERN,
-            link: '',
+            link: 'https://ancient-bayou-65086.herokuapp.com/',
             code: 'https://github.com/burneverything1/FSO-Note-nodebackend',
             selected: false
         },
