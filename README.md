@@ -1,1 +1,1 @@
-This is the code for my portfolio site. Built using this guide https://www.youtube.com/watch?v=41-jn5tdg50, shoutout to Coding with Glove. Updated to include some more modern React syntax.
+This is the code for my portfolio site. Built using this guide https://www.youtube.com/watch?v=41-jn5tdg50, shoutout to Coding with Glove. Updated to include some more modern React syntax. Built with ReactJS and Bootstrap.
