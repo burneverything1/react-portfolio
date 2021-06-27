@@ -5,18 +5,24 @@ import { Container, Navbar, Nav } from 'react-bootstrap'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage';
+import BlogPage from './pages/BlogPage'
 
 const App = (props) => {
   const [ title, setTitle ] = useState('Tim Yehan Lee')
   const [ headerLinks, setHeaderLinks ] = useState([
     {htitle: 'Home', path: '/'},
     {htitle: 'About', path:'/about'}, 
+    {htitle: 'Blog', path:'/blog'}
   ])
   const [ home, setHome ] = useState({
     title: 'Always Learning',
     subTitle: 'Solving problems with Technology'
   })
   const [ about, setAbout ] = useState('About Me')
+  const [ blog, setBlog ] = useState({
+    title: 'Development Lessons',
+    subTitle: 'Learnings and Thoughts as a Software Engineer'
+  })
 
   return (
     <Router>
@@ -30,6 +36,7 @@ const App = (props) => {
             <Nav className='ml-auto'>
               <Link className='nav-link' to='/'>Home</Link>
               <Link className='nav-link' to='/about'>About</Link>
+              <Link className='nav-link' to='/blog'>Blog</Link>
 
             </Nav>
           </Navbar.Collapse>
@@ -38,12 +45,16 @@ const App = (props) => {
         <Route path='/' exact render={() => <HomePage
           title={home.title}
           subTitle={home.subTitle}
-          text={home.text}
         />}/>
 
         <Route path='/about' render={() => <AboutPage
           title={about}
         />}/>
+
+        <Route path='/blog' render={() => <BlogPage
+          title={blog.title}
+          subTitle={blog.subTitle}
+      />}/>
 
         <Footer />
 

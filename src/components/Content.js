@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 
 const Content = (props) => {
     return (
-        <Container fluid={true}>
+        <Container fluid>
             <Row className='justify-content-center'>
                 <Col md={8}>
                     {props.children}
