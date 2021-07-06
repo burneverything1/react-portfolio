@@ -22,7 +22,7 @@ const BlogText = (props) => {
                 </code>
             </pre>
             <p>
-                This was taken from <a href="https://fullstackopen.com/en/">Full Stack Open</a>. A template for public use can be found here: <a href="https://github.com/burneverything1/mernbackend-template">Github</a>
+                This was taken from <a href="https://fullstackopen.com/en/">Full Stack Open</a>. This blog post is to serve as a working test-of-concept and personal note. A template for public use can be found here: <a href="https://github.com/burneverything1/mernbackend-template">Github</a>
             </p>
             <ul>
                 <li>
