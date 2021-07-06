@@ -5,6 +5,7 @@ import Card from '../components/Card'
 
 import MERN from '../assets/images/MERN.jpg'
 import API from '../assets/images/API.svg'
+import Aboutme from '../assets/images/Aboutme.png'
 
 const Carousel = (props) => {
     const [ items, setItems ] = useState([
@@ -24,6 +25,15 @@ const Carousel = (props) => {
             imgSrc: API,
             link: 'https://50emawebsite.burneverything1.repl.co/',
             code: 'https://github.com/burneverything1/50EMAWebsite',
+            selected: false
+        },
+        {
+            id: 2,
+            title: 'This Portfolio',
+            subTitle: 'React + Bootstrap',
+            imgSrc: Aboutme,
+            link: 'https://www.timyehanlee.com/',
+            code: 'https://github.com/burneverything1/react-portfolio',
             selected: false
         }
     ])

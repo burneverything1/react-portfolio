@@ -34,3 +34,8 @@ code {
     font-size: 16px;
     margin: 0px;
 }
+
+.blog-code {
+    display: inline;
+    white-space: pre-wrap;
+}

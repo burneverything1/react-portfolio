@@ -1,15 +1,13 @@
 import React from 'react'
-import Content from '../components/Content'
+import Blog from '../components/Blog'
 import Hero from '../components/Hero'
 
 const BlogPage = (props) => {
     return(
         <div>
-            <Hero title={props.title} subTitle={props.subTitle}/>
+            <Hero title={props.title}/>
 
-            <Content>
-                
-            </Content>
+            <Blog/>
         </div>
     )
 }

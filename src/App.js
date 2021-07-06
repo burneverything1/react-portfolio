@@ -20,8 +20,7 @@ const App = (props) => {
   })
   const [ about, setAbout ] = useState('About Me')
   const [ blog, setBlog ] = useState({
-    title: 'Development Lessons',
-    subTitle: 'Learnings and Thoughts as a Software Engineer'
+    title: 'Development Lessons'
   })
 
   return (
@@ -53,7 +52,6 @@ const App = (props) => {
 
         <Route path='/blog' render={() => <BlogPage
           title={blog.title}
-          subTitle={blog.subTitle}
       />}/>
 
         <Footer />
