@@ -21,6 +21,47 @@ const BlogText = (props) => {
                     │   └── middleware.js<br/>
                 </code>
             </pre>
+            <p>
+                This was taken from <a href="https://fullstackopen.com/en/">Full Stack Open</a>. A template for public use can be found here: <a href="https://github.com/burneverything1/mernbackend-template">Github</a>
+            </p>
+            <ul>
+                <li>
+                    index.js<br/>create server with http and Express app, then start server with server.listen
+                </li>
+                <li>
+                    app.js<br/>connect to MongoDB<br/>attach middleware to Express app, including router
+                </li>
+                <li>
+                    controllers
+                    <ul>
+                        <li>
+                            router.js<br/>express Router, handles all the requests 
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    models
+                    <ul>
+                        <li>
+                            datum.js<br/>set mongoDB schema and adjusted methods through Mongoose
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    utils
+                    <ul>
+                        <li>
+                            config.js<br/>import environmental variables
+                        </li>
+                        <li>
+                            logger.js<br/>choice of info and error logging
+                        </li>
+                        <li>
+                            middleware.js<br/>minimum: request logger; unknown endpoint catch; error handler
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     )
 }
