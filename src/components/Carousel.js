@@ -56,7 +56,7 @@ const Carousel = (props) => {
           code: 'https://github.com/burneverything1/wavePortal-contracts',
           selected: false
         }
-    ].reverse())    // reverse to show in reverse chronological order
+    ])
 
     const handleCardClick = (id, card) => {
         let c_items = [...items]
