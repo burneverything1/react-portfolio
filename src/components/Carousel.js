@@ -8,6 +8,7 @@ import API from '../assets/images/API.svg'
 import Aboutme from '../assets/images/Aboutme.png'
 import oura_alexa from '../assets/images/oura_alexa.png'
 import solidity from '../assets/images/solidity.png'
+import produce from '../assets/images/produce_markets.png'
 
 const Carousel = (props) => {
     const [ items, setItems ] = useState([
@@ -54,6 +55,15 @@ const Carousel = (props) => {
           imgSrc: solidity,
           link: 'https://waveportal.burneverything1.repl.co',
           code: 'https://github.com/burneverything1/wavePortal-contracts',
+          selected: false
+        },
+        {
+          id: 5,
+          title: 'LettuceSwap',
+          subTitle: 'Localized Produce Market. OSU Fall Hackathon 2021',
+          imgSrc: produce,
+          link: 'https://lettuceswap.burneverything1.repl.co/',
+          code: 'https://github.com/burneverything1/lettuceswap-api',
           selected: false
         }
     ])
